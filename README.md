@@ -1,8 +1,36 @@
-# Insurance AI Agent 🤖
+# Insurance AI Agent
 
-An intelligent insurance automation agent built with LangChain and OpenAI GPT-4. This AI agent automates insurance quoting, underwriting assessment, and document filling processes through natural language interaction.
+## 🚀 AI-Powered Insurance Automation Platform
 
-## 🌟 Features
+An advanced, production-ready insurance automation system built with LangChain and OpenAI GPT-4. This intelligent platform automates the complete insurance workflow including quote generation, underwriting assessment, and document filling through natural language interaction and REST API.
+
+## 🌟 Key Features
+
+### Core Capabilities
+- **🤖 AI-Powered Agent**: Natural language processing with LangChain and GPT-4
+- **💰 Intelligent Quoting**: Automated insurance quote generation with comprehensive rate tables
+- **📊 Smart Underwriting**: ML-based risk assessment with rule engine and decision tree classifier
+- **📄 Document Automation**: PDF generation and electronic signature integration
+- **🔐 Secure API**: FastAPI-based REST API with key authentication
+- **🐳 Production Ready**: Docker containerization and cloud deployment support
+
+### Insurance Types Supported
+- Auto Insurance
+- Health Insurance  
+- Life Insurance
+- Home Insurance
+
+## 🛠️ Technology Stack
+
+- **Framework**: LangChain, FastAPI
+- **AI/ML**: OpenAI GPT-4, scikit-learn
+- **PDF Processing**: ReportLab, PyPDF2
+- **API**: FastAPI, Uvicorn
+- **Testing**: Pytest
+- **Deployment**: Docker, Docker Compose
+- **Cloud**: AWS, Heroku, Azure support
+
+## 📋 Features
 
 - **Insurance Quoting**: Automatically calculates insurance premiums based on customer information
 - **Underwriting Assessment**: Performs risk evaluation and provides approval decisions

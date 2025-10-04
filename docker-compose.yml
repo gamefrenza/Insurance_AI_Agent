@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  insurance-agent-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - API_KEYS=${API_KEYS:-test-key-12345,demo-key-67890}
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+    volumes:
+      - ./generated_documents:/app/generated_documents
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+

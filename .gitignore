@@ -24,10 +24,7 @@ wheels/
 venv/
 ENV/
 env/
-
-# Environment Variables
-.env
-.env.local
+.venv
 
 # IDE
 .vscode/
@@ -36,24 +33,39 @@ env/
 *.swo
 *~
 
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+insurance_agent_api.log
+
+# Generated documents
+generated_documents/*.pdf
+!generated_documents/.gitkeep
+
+# ML Models
+*.pkl
+underwriting_model.pkl
+underwriting_scaler.pkl
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
 # OS
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
+# Docker
+docker-compose.override.yml
 
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Project specific
-insurance_data/
-*.db
-*.sqlite
-
-
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
